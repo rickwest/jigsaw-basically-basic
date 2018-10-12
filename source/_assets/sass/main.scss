@@ -3,11 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
 @import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
 
-// Bootstrap core CSS
-@import "~bootstrap/scss/bootstrap";
+@import "basically-basic/themes/default";
 
-// Startbootstrap Clean Blog
-@import '~startbootstrap-clean-blog/scss/clean-blog';
+@import "basically-basic";
 
 // Highlight.js theme
 @import '~highlight.js/styles/tomorrow-night-bright.css';
