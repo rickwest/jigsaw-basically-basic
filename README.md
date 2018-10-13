@@ -1,6 +1,6 @@
-# Jigsaw Clean Blog
+# Jigsaw Basically Basic
 
-Jigsaw Clean Blog, as the name suggests, is a simple [Jigsaw](https://jigsaw.tighten.co/) implementation of the [Startbootstrap Clean Blog theme](https://startbootstrap.com/template-overviews/clean-blog/). See the demo [here](https://jigsaw-clean-blog.netlify.com/).
+Jigsaw Basically Basic, as the name suggests, is a simple [Jigsaw](https://jigsaw.tighten.co/) implementation of the [Jekyll Basically Basic theme](https://github.com/mmistakes/jekyll-theme-basically-basic). See the demo [here](https://jigsaw-basically-basic.netlify.com/).
 
 ### System Requirements
 To use Jigsaw, you need to have PHP 7 and Composer installed on your machine. You'll also need Node.js, NPM and Yarn installed in order to use Laravel Mix to compile the CSS and Javascript.
@@ -8,7 +8,7 @@ To use Jigsaw, you need to have PHP 7 and Composer installed on your machine. Yo
 ### Getting Started
 To get started simply clone the repo by running the following command:
 
-``` git clone https://github.com/rickwest/jigsaw-clean-blog.git ```
+``` git clone https://github.com/rickwest/jigsaw-basically-basic.git ```
  
 Install the dependencies using Composer and Yarn:
 ``` composer install ```  and ``` yarn install ```
@@ -61,5 +61,5 @@ The comprehensive, official blade documentation is available [here](https://lara
 
 ### Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rickwest/jigsaw-clean-blog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rickwest/jigsaw-basically-basic)
 
