@@ -1,7 +1,7 @@
 <header class="intro">
     @if( $page->image )
         <div class="intro-image">
-            <img src="{{ $page->image }}" alt="{{ $page->title }}">
+            <img src="{{ $page->baseUrl }}{{ $page->image }}" alt="{{ $page->title }}">
         </div>
     @endif
 
@@ -12,12 +12,15 @@
                 <p class="intro-subtitle">{{ $page->subtitle }}</p>
             @endif
 
-            {{--@if( $page->date )--}}
-            {{--{% include author %}--}}
-            {{--<p class="entry-meta">--}}
-            {{--{% if author_name %}<span class="byline-item">{{ author_name | prepend: 'by ' }}</span>{% endif %}<span class="byline-item"><span class="icon">{% include icon-calendar.svg %}</span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></span>{% if page.read_time %} <span class="byline-item"><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>{% endif %}--}}
-            {{--</p>--}}
-            {{--{% endif %}--}}
+            @if( $page->date)
+                <p class="entry-meta">
+                    @if($page->author->name)
+                        <span class="byline-item">by {{ $page->author->name }}</span>
+                    @endif
+                    <span class="byline-item"><span class="icon"><i class="far fa-calendar-alt"></i></span></span><time datetime="{{ date('F jS, Y', $page->date) }}">{{ date('F jS, Y', $post->date) }}</time></span>
+                    <span class="byline-item"><span class="icon"><i class="fas fa-stopwatch"></i></span>~{{ round(str_word_count($post) / 200) }} min read</span>
+                </p>
+            @endif
 
             @if( $page->introduction )
                 <div class="intro-more">

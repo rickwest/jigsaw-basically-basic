@@ -34,6 +34,7 @@ image: assets/images/home-bg.jpg
                         <footer class="entry-meta">
                             <ul>
                                 <li><span class="icon"><i class="far fa-calendar-alt"></i></span><time class="entry-time" datetime="{{ date('F jS, Y', $post->date) }}">{{ date('F jS, Y', $post->date) }}</time></li>
+                                <li><span class="icon"><i class="fas fa-stopwatch"></i></span>~{{ round(str_word_count($post) / 200) }} min read</li>
                             </ul>
                         </footer>
                         <div class="entry-excerpt">
@@ -56,7 +57,7 @@ image: assets/images/home-bg.jpg
                         @if ($next = $pagination->next)
                             <li>
                                 <a href="{{ $page->baseUrl }}{{ $next }}" class="next">Older
-                                    <span class="icon icon--arrow-right fa-2x"><i class="fas fa-angle-right fa-lg"></i></span>
+                                    <span class="icon icon--arrow-right fa-2x"><i class="fas fa-angle-right"></i></span>
                                 </a>
                             </li>
                         @endif
