@@ -17,7 +17,7 @@ return [
     'perPage' => 5,
 
     // The email address to send the https://formspree.io/ contact form submissions to
-    'email' => 'rickwestdev@gmail.com',
+    'email' => '',
 
     // The name of the site. This is used in the nav and footer
     'siteName' => 'Jigsaw Basically Basic',
@@ -29,16 +29,6 @@ return [
             'icon' => 'fab fa-twitter',
             'label' => 'Twitter',
         ],
-        'facebook' => [
-            'link' => '#',
-            'icon' => 'fab fa-facebook-square',
-            'label' => 'Facebook',
-        ],
-        'github' => [
-            'link' => '#',
-            'icon' => 'fab fa-github',
-            'label' => 'Github',
-        ],
         'linkedin' => [
             'link' => '#',
             'icon' => 'fab fa-linkedin',
@@ -49,13 +39,19 @@ return [
             'icon' => 'fab fa-medium',
             'label' => 'Medium',
         ],
+        'github' => [
+            'link' => '#',
+            'icon' => 'fab fa-github',
+            'label' => 'Github',
+        ],
 //      'another social service' => [
 //          'link' => 'link to your account',
 //          'icon' => 'font awesome icon https://fontawesome.com/icons?d=gallery&m=free',
 //      ]
     ],
+    // Details about the site owner/author
     'author' => [
-        'name' => '',
+        'name' => 'Rick',
         'image' => '',
         'twitter' => '',
     ],
