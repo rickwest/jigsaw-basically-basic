@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);@import url(https://use.fontawesome.com/releases/v5.3.1/css/all.css);/* Tomorrow Night Bright Theme */
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i);/* Tomorrow Night Bright Theme */
 /* Original theme - https://github.com/chriskempson/tomorrow-theme */
 /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
 
@@ -2051,83 +2051,83 @@ th {
 }
 
 .icon--bitbucket {
-  fill: #205081;
+  color: #205081;
 }
 
 .icon--codepen {
-  fill: #000;
+  color: #000;
 }
 
 .icon--dribbble {
-  fill: #ea4c89;
+  color: #ea4c89;
 }
 
 .icon--email {
-  fill: #000;
+  color: #000;
 }
 
 .icon--facebook {
-  fill: #3b5998;
+  color: #3b5998;
 }
 
 .icon--flickr {
-  fill: #0063dc;
+  color: #0063dc;
 }
 
 .icon--github {
-  fill: #181717;
+  color: #181717;
 }
 
 .icon--gitlab {
-  fill: #e24329;
+  color: #e24329;
 }
 
 .icon--googleplus {
-  fill: #dc4e41;
+  color: #dc4e41;
 }
 
 .icon--instagram {
-  fill: #e4405f;
+  color: #e4405f;
 }
 
 .icon--lastfm {
-  fill: #d51007;
+  color: #d51007;
 }
 
 .icon--linkedin {
-  fill: #0077b5;
+  color: #0077b5;
 }
 
 .icon--pinterest {
-  fill: #bd081c;
+  color: #bd081c;
 }
 
 .icon--rss {
-  fill: #ffa500;
+  color: #ffa500;
 }
 
 .icon--soundcloud {
-  fill: #f30;
+  color: #f30;
 }
 
 .icon--stackoverflow {
-  fill: #fe7a16;
+  color: #fe7a16;
 }
 
 .icon--tumblr {
-  fill: #36465d;
+  color: #36465d;
 }
 
 .icon--twitter {
-  fill: #1da1f2;
+  color: #1da1f2;
 }
 
 .icon--xing {
-  fill: #005a5f;
+  color: #005a5f;
 }
 
 .icon--youtube {
-  fill: #cd201f;
+  color: #cd201f;
 }
 
 /* ==========================================================================

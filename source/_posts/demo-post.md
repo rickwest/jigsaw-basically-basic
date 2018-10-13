@@ -6,7 +6,6 @@ subtitle: This is a demo post
 date: 2018-09-09
 section: content
 ---
-
 Some interesting content 😁. 
 
 ```php
