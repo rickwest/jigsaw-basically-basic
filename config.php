@@ -31,7 +31,7 @@ return [
         ],
         'facebook' => [
             'link' => '#',
-            'icon' => 'fab fa-facebook-f',
+            'icon' => 'fab fa-facebook-square',
             'label' => 'Facebook',
         ],
         'github' => [
@@ -39,9 +39,24 @@ return [
             'icon' => 'fab fa-github',
             'label' => 'Github',
         ],
+        'linkedin' => [
+            'link' => '#',
+            'icon' => 'fab fa-linkedin',
+            'label' => 'LinkedIn',
+        ],
+        'medium' => [
+            'link' => '#',
+            'icon' => 'fab fa-medium',
+            'label' => 'Medium',
+        ],
 //      'another social service' => [
 //          'link' => 'link to your account',
 //          'icon' => 'font awesome icon https://fontawesome.com/icons?d=gallery&m=free',
 //      ]
+    ],
+    'author' => [
+        'name' => '',
+        'image' => '',
+        'twitter' => '',
     ],
 ];

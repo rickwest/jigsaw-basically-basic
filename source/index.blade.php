@@ -1,33 +1,21 @@
 ---
 pagination:
     collection: posts
+title: Jigsaw Basically Basic
+subtitle: A Jigsaw implementation of the Basically Basic Jekyll theme by mmistakes
+image: assets/images/home-bg.jpg
 ---
 
 @extends('_layouts.master')
 
 @section('body')
-
     {{--<!-- Page Header -->--}}
     @include('_partials.page-intro')
-    {{--<header class="masthead" style="background-image: url('/assets/images/home-bg.jpg')">--}}
-        {{--<div class="overlay"></div>--}}
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-lg-8 col-md-10 mx-auto">--}}
-                    {{--<div class="site-heading">--}}
-                        {{--<h1>Jigsaw Clean Blog</h1>--}}
-                        {{--<span class="subheading">A Jigsaw implementation of a blog theme by Start Bootstrap</span>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</header>--}}
-    {{--{% include page-intro.html %}--}}
 
     <!-- Main Content -->
     <main id="main" class="page-content" aria-label="Content">
         <div class="index inner">
-            <div>inner index content</div>
+            <div></div>
             <div>
                 <header class="section-title">
                     <h2>Posts</h2>
@@ -39,14 +27,9 @@ pagination:
                             <h3 class="entry-title">
                                 <a href="{{ $post->getPath() }}" rel="bookmark">{{ $post->title }}</a>
                             </h3>
-                            {{--{% if post.image.thumbnail %}--}}
-                            {{--{% assign entry_image = post.image.thumbnail %}--}}
-                            {{--{% unless entry_image contains '://' %}--}}
-                            {{--{% assign entry_image = entry_image | relative_url %}--}}
-                            {{--{% endunless %}--}}
-                            {{--{% assign entry_image = entry_image | escape %}--}}
-                            {{--<img class="entry-image u-photo" src="{{ entry_image }}" alt="">--}}
-                            {{--{% endif %}--}}
+                            {{--@if($post->image)--}}
+                                {{--<img class="entry-image u-photo" src="{{ $post->image }}" alt="">--}}
+                            {{--@endif--}}
                         </header>
                         <footer class="entry-meta">
                             <ul>
