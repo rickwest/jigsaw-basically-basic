@@ -3,7 +3,7 @@ pagination:
     collection: posts
 title: Jigsaw Basically Basic
 subtitle: A Jigsaw implementation of the Basically Basic Jekyll theme by mmistakes
-image: assets/images/home-bg.jpg
+image: /assets/images/home-bg.jpg
 ---
 
 @extends('_layouts.master')
