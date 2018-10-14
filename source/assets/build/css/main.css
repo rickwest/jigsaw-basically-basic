@@ -1165,10 +1165,9 @@ th {
 }
 
 .site-logo {
-  width: 50px;
+  width: auto;
   height: 50px;
   margin-right: 0.5rem;
-  border-radius: 50%;
 }
 
 .more-link {

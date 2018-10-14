@@ -22,6 +22,8 @@ return [
     // The name of the site. This is used in the nav and footer
     'siteName' => 'Jigsaw Basically Basic',
 
+    'logo' => '/assets/images/logo.png',
+
     // Social media links/icons that are used in the footer, add as many as you like!
     'socials' => [
         'twitter' => [
