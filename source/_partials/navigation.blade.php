@@ -13,6 +13,7 @@
                 <span itemprop="name">About</span>
             </a>
         </li>
+
         <li class="menu-item">
             <a href="/contact" itemprop="url">
                 <span itemprop="name">Contact</span>

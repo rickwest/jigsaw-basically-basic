@@ -14,11 +14,8 @@
 
             @if( $page->date)
                 <p class="entry-meta">
-                    @if($page->author->name)
-                        <span class="byline-item">by {{ $page->author->name }}</span>
-                    @endif
-                    <span class="byline-item"><span class="icon"><i class="far fa-calendar-alt"></i></span></span><time datetime="{{ date('F jS, Y', $page->date) }}">{{ date('F jS, Y', $post->date) }}</time></span>
-                    <span class="byline-item"><span class="icon"><i class="fas fa-stopwatch"></i></span>~{{ round(str_word_count($page) / 200) }} min read</span>
+                    <span class="byline-item"><span class="icon"><i class="far fa-calendar-alt"></i></span></span><time datetime="{{ date('F jS, Y', $page->date) }}">{{ date('F jS, Y', $page->date) }}</time></span>
+                    <span class="byline-item"><span class="icon"><i class="fas fa-stopwatch"></i></span>~ {{ $page->readingTime($page) }}</span>
                 </p>
             @endif
 

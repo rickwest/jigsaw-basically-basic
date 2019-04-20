@@ -9,7 +9,7 @@ image: /assets/images/home-bg.jpg
 @extends('_layouts.master')
 
 @section('body')
-    {{--<!-- Page Header -->--}}
+    <!-- Page Header -->
     @include('_partials.page-intro')
 
     <!-- Main Content -->
@@ -27,14 +27,11 @@ image: /assets/images/home-bg.jpg
                             <h3 class="entry-title">
                                 <a href="{{ $post->getPath() }}" rel="bookmark">{{ $post->title }}</a>
                             </h3>
-                            {{--@if($post->image)--}}
-                                {{--<img class="entry-image u-photo" src="{{ $post->image }}" alt="">--}}
-                            {{--@endif--}}
                         </header>
                         <footer class="entry-meta">
                             <ul>
                                 <li><span class="icon"><i class="far fa-calendar-alt"></i></span><time class="entry-time" datetime="{{ date('F jS, Y', $post->date) }}">{{ date('F jS, Y', $post->date) }}</time></li>
-                                <li><span class="icon"><i class="fas fa-stopwatch"></i></span>~{{ round(str_word_count($post) / 200) }} min read</li>
+                                <li><span class="icon"><i class="fas fa-stopwatch"></i></span>~ {{ $post->readingTime($post) }}</li>
                             </ul>
                         </footer>
                         <div class="entry-excerpt">
@@ -42,7 +39,7 @@ image: /assets/images/home-bg.jpg
                             <p><a href="{{ $post->getPath() }}" class="more-link">Read More <span class="icon icon--arrow-right fa-2x"><i class="fas fa-angle-right"></i></span></a></p>
                         </div>
                     </article>
-                    @endforeach
+                @endforeach
 
                     <!-- Pagination links -->
                     <nav class="pager">
@@ -63,6 +60,7 @@ image: /assets/images/home-bg.jpg
                         @endif
                         </ul>
                     </nav>
+
                 </div>
             </div>
         </div>
