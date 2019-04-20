@@ -1,5 +1,6 @@
 <?php namespace App\Listeners;
 
+use Illuminate\Support\Str;
 use TightenCo\Jigsaw\Jigsaw;
 use samdark\sitemap\Sitemap;
 
