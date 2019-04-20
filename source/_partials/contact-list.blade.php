@@ -17,11 +17,10 @@
         </li>
     @endforeach
 
-    {{-- Once we have rss feed --}}
-    {{--<li>--}}
-        {{--<a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">--}}
-            {{--<span class="icon icon--rss">{% include icon-rss.svg %}</span>--}}
-            {{--<span class="label">{{ site.data.theme.t.subscribe | default: 'Subscribe' }}</span>--}}
-        {{--</a>--}}
-    {{--</li>--}}
+    <li>
+        <a href="/feed.xml" title="RSS Feed">
+            <span class="icon icon--rss"><i class="fa fa-rss"></i></span>
+            <span class="label">RSS Feed</span>
+        </a>
+    </li>
 </ul>

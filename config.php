@@ -1,7 +1,7 @@
 <?php
 
 return [
-    // Replace with the baseUrl of your site. For example, https://jigsaw-clean-blog.netlify.com
+    // Replace with the baseUrl of your site. For example, https://jigsaw-basically-basic.netlify.com
     'baseUrl' => '',
     'production' => false,
 
@@ -16,15 +16,22 @@ return [
     // Number of collection items to show per page
     'perPage' => 5,
 
-    // The email address to send the https://formspree.io/ contact form submissions to
+    // Your email address
     'email' => '',
 
-    // The name of the site. This is used in the nav and footer
+    // The name of the site.
     'siteName' => 'Jigsaw Basically Basic',
 
+    // Description of the site
+    'siteDescription' => '',
+
+    // Your name
+    'siteAuthor' => '',
+
+    // Site logo
     'logo' => '/assets/images/logo.png',
 
-    // Social media links/icons that are used in the footer, add as many as you like!
+    // Social media links/icons that are used in the menu, add as many as you like!
     'socials' => [
         'twitter' => [
             'link' => '#',
@@ -51,10 +58,9 @@ return [
 //          'icon' => 'font awesome icon https://fontawesome.com/icons?d=gallery&m=free',
 //      ]
     ],
-    // Details about the site owner/author
-    'author' => [
-        'name' => 'Rick',
-        'image' => '',
-        'twitter' => '',
-    ],
+
+    'readingTime' => function($post) {
+        $mins = round(str_word_count(strip_tags($post)) / 200);
+        return $mins . ' min read';
+    }
 ];
