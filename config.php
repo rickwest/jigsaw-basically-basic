@@ -57,5 +57,8 @@ return [
     'readingTime' => function($post) {
         $mins = round(str_word_count(strip_tags($post)) / 200);
         return $mins . ' min read';
-    }
+    },
+
+     // Google Analytics Tracking Id. For example, UA-123456789-1
+    'gaTrackingId' => '',
 ];
