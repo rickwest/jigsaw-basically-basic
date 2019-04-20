@@ -2,6 +2,7 @@
 extends: _layouts.page
 title: Post with a Hero Image
 image: /assets/images/hero-image.jpg
+date: 2019-01-19
 ---
 
 This post should display a large hero image at the top of a page.

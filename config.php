@@ -43,11 +43,6 @@ return [
             'icon' => 'fab fa-linkedin',
             'label' => 'LinkedIn',
         ],
-        'medium' => [
-            'link' => '#',
-            'icon' => 'fab fa-medium',
-            'label' => 'Medium',
-        ],
         'github' => [
             'link' => '#',
             'icon' => 'fab fa-github',
